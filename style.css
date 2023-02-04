@@ -26,12 +26,34 @@ header.header{
     background-color: #F4FFF8;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 header h1 {
     font-family: 'Lobster', cursive;
     background-color: inherit;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
+
+.organismImgContainerR, .organismImgContainerL {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.organismImgContainerR {
+    transform: scaleX(-1);
+}
+
+.organismImgContainerL img, .organismImgContainerR img {
+    max-width: 80%;
+    background-color: none;
+    border-radius: inherit;
+}
 
 /* Header End */
 /* New Strand(s) Generator Button and Generated full list(s) Section Start */
@@ -42,6 +64,15 @@ header h1 {
     border: 1px solid white;
     height: 20rem;
     margin-top: 3rem;
+}
+
+.DNA-ListContainer {
+    background-color: inherit;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttonParentContainer {
@@ -107,9 +138,31 @@ header h1 {
 
 .pairDisplayContainer {
     background-color: #3bc14a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     width: 12rem;
     height: 12rem;
+    animation: none;
+}
+
+.pairDisplayContainer p {
+    background-color: inherit;
 }
 
 /* Pair Selector Form and Pair Value Generator End */
+
+/* Keyframes */
+
+@keyframes close {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.5);}
+    100% {transform: scale(0)}
+}
+
+@keyframes open {
+    0% {transform: scale(0)}
+    50% {transform: scale(0.5);}
+    100% {transform: scale(1);}
+}
