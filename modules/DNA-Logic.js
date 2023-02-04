@@ -68,19 +68,6 @@ function pAequorFactory(num, dna) {
         }
         return complementArr;
         },
-      mapComplementStrand() {
-        this.DNA.map(x => {
-          if (x == 'C') {
-            return x = 'G'
-          } else if (x == 'G') {
-            return x = 'C'
-          } else if (x == 'A') {
-            return x = 'T'
-          } else if (x == 'T') {
-            return x = 'A'
-          }
-        })
-      }
       }
     };
 
@@ -96,11 +83,12 @@ function pAequorFactory(num, dna) {
     createAndPushSurvivingPAequor(survivalList);
   };
 
-  let pq1 = pAequorFactory(1, mockUpStrand());
+let pq1 = pAequorFactory(1, mockUpStrand());
 let survivablePQ1 = survivalList[1];
 console.log(pq1.DNA)
 console.log(pq1.complementStrand());
-console.log(pq1.mapComplementStrand());
+console.log(pq1.DNA[1])
+console.log(pq1.complementStrand()[1]);
 
 
 

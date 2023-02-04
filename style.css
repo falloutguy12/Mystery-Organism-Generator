@@ -1,0 +1,115 @@
+* {
+    font-size: 16px;
+    background-color: #424B54;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ h1 {
+    font-size: 2.25rem;
+ }
+
+
+
+
+
+
+
+/* Header Start */
+header.header{
+    display: flex;
+    background-color: #F4FFF8;
+    width: 100%;
+    justify-content: center;
+}
+header h1 {
+    font-family: 'Lobster', cursive;
+    background-color: inherit;
+}
+
+
+/* Header End */
+/* New Strand(s) Generator Button and Generated full list(s) Section Start */
+
+.randomGenButtonAndFullDNAcontainer {
+    background-color: inherit;
+    display: flex;
+    border: 1px solid white;
+    height: 20rem;
+    margin-top: 3rem;
+}
+
+.buttonParentContainer {
+    width: 25%;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonChildContainer {
+    background-color: #F4FFF8;
+    width: 12rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonChildContainer button {
+    background-color: #B38D97;
+    font-size: .9rem;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    box-shadow: 2.5px 3.5px rgb(175, 175, 175);
+}
+
+.DNA-ListContainer {
+    width: 75%;
+    background-color: #F4FFF8;
+}
+
+/* Button and Generated full list Section End */
+/* Pair Selector Form and Pair Value Generator Start */
+
+.pairSelectorParentContainer {
+    background-color: inherit;
+    display: flex;
+    border: 1px solid white;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pairSelectorChildContainer {
+    background-color: #F4FFF8;
+    width: 35rem;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pairSelectorFormContainer {
+    background-color: #D9D9D9;
+    width: 10rem;
+    height: 5rem;
+}
+
+.pairSelectorFormContainer p {
+    background-color: inherit;
+}
+
+.pairDisplayContainer {
+    background-color: #3bc14a;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+}
+
+/* Pair Selector Form and Pair Value Generator End */
