@@ -61,7 +61,6 @@ header h1 {
 .randomGenButtonAndFullDNAcontainer {
     background-color: inherit;
     display: flex;
-    border: 1px solid white;
     height: 20rem;
     margin-top: 3rem;
 }
@@ -111,7 +110,6 @@ header h1 {
 .pairSelectorParentContainer {
     background-color: inherit;
     display: flex;
-    border: 1px solid white;
     height: 20rem;
     justify-content: center;
     align-items: center;
@@ -130,6 +128,8 @@ header h1 {
     background-color: #D9D9D9;
     width: 10rem;
     height: 5rem;
+    position: relative;
+    display: inline-block;
 }
 
 .pairSelectorFormContainer p {
@@ -151,7 +151,65 @@ header h1 {
     background-color: inherit;
 }
 
-/* Pair Selector Form and Pair Value Generator End */
+
+/* Form Start */
+.btn {
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: .4rem;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #B38D97;
+    border: 1px solid #333;
+    z-index: 1;
+    width: 100%;
+    max-height: 125%;
+    overflow-y: auto;
+    display: none;
+  }
+
+
+  
+  .pairSelectorFormContainer:hover .dropdown-content {
+    display: block;
+    background-color:#B38D97;
+  }
+  
+  .scrollable {
+    display: flex;
+    flex-direction: column;
+    background-color:#B38D97;
+
+  }
+  
+  input[type="radio"] {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    border-radius: 0;
+    background-color: #F4FFF8;
+    border: .8px solid black;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    background-color: #D9D9D9;
+  }
+
+  #form {
+    background-color: #D9D9D9;
+  }
+
+/* Form End */
+/* Pair Selector Form Container and Pair Value Generator End */
 
 /* Keyframes */
 
