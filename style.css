@@ -104,6 +104,14 @@ header h1 {
     background-color: #F4FFF8;
 }
 
+#strand1 {
+    background-color: inherit;
+}
+
+#strand2 {
+    background-color: inherit;
+}
+
 /* Button and Generated full list Section End */
 /* Pair Selector Form and Pair Value Generator Start */
 

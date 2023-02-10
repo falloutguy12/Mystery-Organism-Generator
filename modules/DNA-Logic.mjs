@@ -66,8 +66,8 @@ function pAequorFactory(num, dna) {
             return 'error'
           };
         }
-        return complementArr;
-        },
+        return pAequorFactory(null, complementArr);
+      },
       }
     };
 
@@ -84,15 +84,14 @@ function pAequorFactory(num, dna) {
   };
 
 let pq1 = pAequorFactory(1, mockUpStrand());
-let survivablePQ1 = survivalList[1];
 console.log(pq1.DNA);
-//console.log(pq1.complementStrand());
+console.log(pq1.complementStrand().DNA);
 //console.log(pq1.DNA[1])
 //console.log(pq1.complementStrand()[1]);
 
 /* Exports */
 
-export {pAequorFactory};
+export {pAequorFactory, returnRandBase, mockUpStrand};
 
 
 
