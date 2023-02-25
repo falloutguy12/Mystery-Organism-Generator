@@ -31,8 +31,12 @@
             </div>
         </div>
         <div class="DNA-ListContainer">
-          <p id="strand1">Base Strand: </p>
-          <p id="strand2"></p>
+          <div class="strand1container">
+            <p class="baseStrand">Base Strand:</p><p id="strand1"></p>
+          </div>
+          <div class="strand2container">
+            <p class="compStrand">Comp Strand:</p> <p id="strand2"></p>
+          </div>
         </div>
     </section>
     <section class="pairSelectorParentContainer">
@@ -40,75 +44,76 @@
             <div class="pairSelectorFormContainer">
                 <button class="btn">Select an Option</button>
                 <div class="dropdown-content">
-                  <form id="form">
-                    <div class="scrollable">
-                      <label for="option-1">
-                        <input type="radio" id="option-1" name="option" value="Pair-1">
-                            1
-                      </label>
-                      <label for="option-2">
-                        <input type="radio" id="option-2" name="option" value="Pair-2">
-                            2
-                      </label>
-                      <label for="option-3">
-                        <input type="radio" id="option-3" name="option" value="Pair-3">
-                            3
-                      </label>
-                      <label for="option-4">
-                        <input type="radio" id="option-4" name="option" value="Pair-4">
-                            4
-                      </label>
-                      <label for="option-5">
-                        <input type="radio" id="option-5" name="option" value="Pair-5">
-                            5
-                      </label>
-                      <label for="option-6">
-                        <input type="radio" id="option-6" name="option" value="Pair-6">
-                            6
-                      </label>
-                      <label for="option-7">
-                        <input type="radio" id="option-7" name="option" value="Pair-7">
-                            7
-                      </label>
-                      <label for="option-8">
-                        <input type="radio" id="option-8" name="option" value="Pair-8">
-                            8
-                      </label>
-                      <label for="option-9">
-                        <input type="radio" id="option-9" name="option" value="Pair-9">
-                            9
-                      </label>
-                      <label for="option-10">
-                        <input type="radio" id="option-10" name="option" value="Pair-10">
-                            10
-                      </label>
-                      <label for="option-11">
-                        <input type="radio" id="option-11" name="option" value="Pair-11">
-                            11
-                      </label>
-                      <label for="option-12">
-                        <input type="radio" id="option-12" name="option" value="Pair-12">
-                            12
-                      </label>
-                      <label for="option-13">
-                        <input type="radio" id="option-13" name="option" value="Pair-13">
-                            13
-                      </label>
-                      <label for="option-14">
-                        <input type="radio" id="option-14" name="option" value="Pair-14">
-                            14
-                      </label>
-                      <label for="option-15">
-                        <input type="radio" id="option-15" name="option" value="Pair-15">
-                            15
-                      </label>
-                      <!-- Add more options as needed -->
-                    </div>
-                  </form>
+                    <form id="form">
+                      <div class="scrollable">
+                        <label for="option-1">
+                          <input type="radio" id="option-1" name="option" value="Pair-1">
+                              1
+                        </label>
+                        <label for="option-2">
+                          <input type="radio" id="option-2" name="option" value="Pair-2">
+                              2
+                        </label>
+                        <label for="option-3">
+                          <input type="radio" id="option-3" name="option" value="Pair-3">
+                              3
+                        </label>
+                        <label for="option-4">
+                          <input type="radio" id="option-4" name="option" value="Pair-4">
+                              4
+                        </label>
+                        <label for="option-5">
+                          <input type="radio" id="option-5" name="option" value="Pair-5">
+                              5
+                        </label>
+                        <label for="option-6">
+                          <input type="radio" id="option-6" name="option" value="Pair-6">
+                              6
+                        </label>
+                        <label for="option-7">
+                          <input type="radio" id="option-7" name="option" value="Pair-7">
+                              7
+                        </label>
+                        <label for="option-8">
+                          <input type="radio" id="option-8" name="option" value="Pair-8">
+                              8
+                        </label>
+                        <label for="option-9">
+                          <input type="radio" id="option-9" name="option" value="Pair-9">
+                              9
+                        </label>
+                        <label for="option-10">
+                          <input type="radio" id="option-10" name="option" value="Pair-10">
+                              10
+                        </label>
+                        <label for="option-11">
+                          <input type="radio" id="option-11" name="option" value="Pair-11">
+                              11
+                        </label>
+                        <label for="option-12">
+                          <input type="radio" id="option-12" name="option" value="Pair-12">
+                              12
+                        </label>
+                        <label for="option-13">
+                          <input type="radio" id="option-13" name="option" value="Pair-13">
+                              13
+                        </label>
+                        <label for="option-14">
+                          <input type="radio" id="option-14" name="option" value="Pair-14">
+                              14
+                        </label>
+                        <label for="option-15">
+                          <input type="radio" id="option-15" name="option" value="Pair-15">
+                              15
+                        </label>
+                        <!-- Add more options as needed -->
+                      </div>
+                    </form>
                 </div>
             </div>
             <div class="pairDisplayContainer">
-                <p>Test txt</p>
+                <p id="pairStrand1">Base: </p>
+                <p id="pairStrand2">Comp: </p>
             </div>
         </div>
     </section>

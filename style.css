@@ -104,12 +104,35 @@ header h1 {
     background-color: #F4FFF8;
 }
 
+.DNA-ListContainer p {
+    background-color: #F4FFF8; 
+    display: inline; 
+}
+
+.strand1container {
+    display: inline;
+    background-color: #F4FFF8;
+}
+
+.baseStrand {
+    margin-right: 2rem;
+}
+
+.strand2container{
+    background-color: #F4FFF8;
+}
+
+.compStrand {
+    margin-right: 2rem;
+}
+
 #strand1 {
-    background-color: inherit;
+    background-color: #F4FFF8;
 }
 
 #strand2 {
-    background-color: inherit;
+    background-color: #F4FFF8;
+    padding-right: 1rem;
 }
 
 /* Button and Generated full list Section End */
@@ -153,6 +176,7 @@ header h1 {
     width: 12rem;
     height: 12rem;
     animation: none;
+    flex-direction: column;
 }
 
 .pairDisplayContainer p {
@@ -182,17 +206,17 @@ header h1 {
   }
 
 
+
   
   .pairSelectorFormContainer:hover .dropdown-content {
     display: block;
     background-color:#B38D97;
   }
   
-  .scrollable {
+.scrollable {
     display: flex;
     flex-direction: column;
-    background-color:#B38D97;
-
+    background-color:#B38D97;    
   }
   
   input[type="radio"] {
